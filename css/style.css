@@ -1,0 +1,303 @@
+/* ------------------------------------ *\
+               Basis settings
+\* ------------------------------------ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Hind Madurai", sans-serif;
+  line-height: 1.6;
+  color: white;
+  background-color: rgb(6, 0, 43);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+.section-head {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 1rem 0 0 0;
+}
+
+.section h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+
+
+
+/* ------------------------------------ *\
+           Showcase and navigation
+\* ------------------------------------ */
+
+.showcase {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/pexels-nick-demou-2473183.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.showcase .container {
+  margin-top: 25vh;
+}
+
+.showcase h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  --animate-delay: 0.5s;
+}
+
+.underline {
+  display: inline-block;
+  width: 150px;
+  height: 2px;
+  background-color: white;
+  --animate-delay: 0.7s;
+}
+
+.paragraph-area {
+  font-size: 1.4rem;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 30, 39, 0.8);
+  z-index: 5;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  transition: background-color 0.3s linear;
+}
+
+nav a {
+  display: inline-flex;
+  padding: 10px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: -4px;
+}
+
+nav li:hover {
+  background-color: rgb(56, 56, 56);
+}
+
+.navigation > a:first-child {
+  padding: 10px 40px;
+  margin-right: auto;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+
+
+
+/* ------------------------------------ *\
+               Gallary Section
+\* ------------------------------------ */
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 14px;
+}
+
+.item-1 {
+  padding: 10px;
+  background-color: rgb(58, 58, 58);
+  border: 1px solid rgb(94, 94, 94);
+  margin-bottom: 15px;
+  text-align: justify;
+  letter-spacing: 1px;
+  max-width: 30vw;
+  transition: transform 0.4s linear;
+}
+
+.item-1:hover {
+  transform: scale(1.05);
+}
+
+.flex-container h4 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.flex-container .text-secondary {
+  color: rgb(0, 214, 221);
+  font-size: 1rem;
+}
+
+.flex-container .text-secondary:hover {
+  color: rgb(122, 251, 255);
+}
+
+
+
+
+
+
+/* ------------------------------------ *\
+               Events Section
+\* ------------------------------------ */
+
+.light-bg-color {
+  background-color: rgb(221, 221, 221);
+  color: rgb(32, 32, 32);
+}
+
+.item-2 {
+  max-width: 21vw;
+  height: fit-content;
+  padding: 10px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  background-color: rgb(194, 194, 194);
+  border: 1px solid rgb(105, 105, 105);
+}
+
+.cell-name {
+  text-transform: uppercase;
+}
+
+.item-2 button {
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  text-transform: uppercase;
+  background-color: rgb(0, 116, 100);
+  transition: transform 0.3s linear;
+  cursor: pointer;
+}
+
+.item-2 button:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+/* ------------------------------------ *\
+           Rewiew Section
+\* ------------------------------------ */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50px 300px 50px;
+  justify-content: center;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.person-massage {
+  /* background-position: left; */
+  background-repeat: no-repeat;
+  background-size: 90%;
+}
+
+.men-img  {
+  background-image: url(../images/man.svg);
+  background-position: left bottom;
+}
+
+.women-img {
+  background-image: url(../images/woman.svg);
+  background-position: right bottom;
+}
+
+.message {
+  border: 1px solid rgb(141, 141, 141);
+  border-radius: 10px;
+  text-align: left;
+  padding: 10px;
+  line-height: 20px;
+}
+
+.sent {
+  background-color: rgb(0, 158, 150);
+  border-bottom-left-radius: 0;
+}
+
+.received {
+  background-color: rgb(0, 158, 79);
+  border-bottom-right-radius: 0;
+}
+
+
+
+
+
+
+/* ------------------------------------ *\
+                  Footer
+\* ------------------------------------ */
+
+.footer {
+  border-top: 1px solid white;
+  padding-bottom: 0;
+}
+
+iframe {
+  margin-top: 5vh;
+  border-radius: 5px;
+}
+
+.number {
+  text-decoration: underline;
+}
+
+.number:hover {
+  color: rgb(0, 202, 209);
+}
+
+footer .footer-bottom {
+  text-align: center;
+  background-color: rgb(14, 189, 212);
+  padding: 1rem;
+}
